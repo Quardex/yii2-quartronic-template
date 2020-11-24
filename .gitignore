@@ -34,6 +34,8 @@ phpunit.phar
 # vagrant runtime
 /.vagrant
 
+/.svn
+
 # ignore generated files
 /frontend/web/index.php
 /frontend/web/index-test.php
@@ -41,3 +43,7 @@ phpunit.phar
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+/frontend/web/admin/index.php
+/frontend/web/admin/index-test.php
+/frontend/web/admin/robots.txt
+composer.lock
