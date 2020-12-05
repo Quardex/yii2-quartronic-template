@@ -11,7 +11,6 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -37,14 +36,21 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '/login' => '/user/account/login',
+                '/site/logout' => '/user/account/logout',
+                '/quartronic/<controller:.*>' => '/quartronic/site/index',
+                '/quartronic/<controller:.*>/<action:.*>' => '/quartronic/site/index',
             ],
         ],
-        */
+    ],
+    'modules' => [
+        'quartronic' => [
+            'class' => 'quarsintex\yii2\quartronic\Module',
+        ],
     ],
     'params' => $params,
 ];

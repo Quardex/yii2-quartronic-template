@@ -47,3 +47,5 @@ phpunit.phar
 /frontend/web/admin/index-test.php
 /frontend/web/admin/robots.txt
 composer.lock
+common/runtime/q.db
+/frontend/web/admin/qassets

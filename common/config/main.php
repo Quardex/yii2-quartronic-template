@@ -9,5 +9,12 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'quartronic' => [
+            'class' => '\quarsintex\yii2\quartronic\Quartronic',
+            'webDir' => __DIR__.'/../../frontend/web/admin/',
+            'webPath' => '/admin/quartronic/',
+            'subWebPath' => '/quartronic',
+            'runtimeDir' => __DIR__.'/../runtime/',
+        ],
     ],
 ];
