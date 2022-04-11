@@ -21,6 +21,6 @@ class m201205_051607_init_quartronic extends Migration
      */
     public function safeDown()
     {
-        unlink(Yii::$app->quartronic->externManager->runtimeDir.'q.db');
+        //unlink(Yii::$app->quartronic->externManager->runtimeDir.'q.db');
     }
 }

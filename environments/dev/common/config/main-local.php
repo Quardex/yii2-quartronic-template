@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=technodrom-serv.q-server.net;dbname=yii2-quartronic-template',
-            'username' => 'yii2-quartronic-template',
-            'password' => 'yii2-quartronic-template-passwordQ1@',
+            'dsn' => 'mysql:host=localhost;dbname=yii2-quartronic-template',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
         ],
         'mailer' => [
