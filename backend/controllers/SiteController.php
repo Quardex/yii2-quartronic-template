@@ -49,6 +49,9 @@ class SiteController extends Controller
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+                'layout' => (function() {
+                    return Yii::$app->response->statusCode != 200 ? 'clean' : $this->layout;
+                })(),
             ],
         ];
     }

@@ -48,4 +48,3 @@ phpunit.phar
 /frontend/web/admin/robots.txt
 composer.lock
 common/runtime/q.db
-/frontend/web/admin/qassets
