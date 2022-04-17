@@ -57,6 +57,15 @@ class SiteController extends Controller
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function beforeAction($action)
+    {
+        if ($action->id == 'logout') $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
+    }
+
+    /**
      * Displays homepage.
      *
      * @return string

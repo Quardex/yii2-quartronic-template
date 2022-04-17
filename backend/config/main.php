@@ -22,7 +22,7 @@ return [
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
-            'name' => 'advanced-backend',
+            'name' => 'yii2-quartronic-template-backend',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -40,8 +40,6 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '/login' => '/user/account/login',
-                '/site/logout' => '/user/account/logout',
                 '/quartronic/<controller:.*>' => '/quartronic/site/index',
                 '/quartronic/<controller:.*>/<action:.*>' => '/quartronic/site/index',
             ],
